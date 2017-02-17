@@ -29,8 +29,8 @@ namespace WebCache
         {
             services.AddDistributedRedisCache(options =>
             {
-                options.InstanceName = "redis";
-                options.Configuration = "172.30.112.20";
+                options.InstanceName = "sample";
+                options.Configuration = "http://redis-redisproj.44fs.preview.openshiftapps.com:6379";
             });
 
             services.AddSession();
