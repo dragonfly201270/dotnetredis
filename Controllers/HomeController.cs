@@ -40,7 +40,7 @@ namespace WebCache.Controllers
                 // read the file and update the URLs
                 var jSONText = System.IO.File.ReadAllText("twitter.json");
                 valueToReturn = GetUpdatedFileContent(jSONText);
-                Thread.Sleep(20000);
+                Thread.Sleep(2);
 
                 // store values in Redis
                 var valueToStoreInRedis = Encoding.UTF8.GetBytes(valueToReturn);
